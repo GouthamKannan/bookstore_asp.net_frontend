@@ -45,6 +45,7 @@ class HomePage extends Component {
           window.location = "/home"
         }
 
+        console.log(configs.api_url);
         // Get the products from the API and store in state
         var response = await fetch(configs.api_url + "/product/get_products", {
         method: "GET",
